@@ -10,6 +10,14 @@ ol, ul {
     padding-inline-start: 0;
 }
 
+hr {
+    border: 0;
+    margin-left: 5%;
+    width: 85%;
+    height: 3px;
+    background-color: lightskyblue;
+}
+
 body>div.side {
     left: 0;
     top: 0;
@@ -58,6 +66,10 @@ body>div.side>ul.nav {
 body>div.side>ul.nav>li {
     justify-content: center;
     margin: 5%;
+}
+
+body>div.side>ul.nav>li.selected>a {
+    color: lightskyblue;
 }
 
 body>div.side>ul.nav>li>a {

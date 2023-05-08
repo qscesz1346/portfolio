@@ -8,7 +8,6 @@
     <title>Portfolio</title>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -36,12 +35,12 @@
             </ul>
         </div>
 
-        <ul class="nav">
-            <li><a href="#home" class="navBtn"><i class="bi bi-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
-            <li><a href="#about" class="navBtn"><i class="bi bi-person"></i>&nbsp;&nbsp;<span>About</span></a></li>
-            <li><a href="#skill" class="navBtn"><i class="bi bi-hdd-stack"></i></i>&nbsp;&nbsp;<span>Skill</span></a></li>
-            <li><a href="#project" class="navBtn"><i class="bi bi-window-stack">&nbsp;&nbsp;</i><span>Project</span></a></li>
-            <li><a href="#contact" class="navBtn"><i class="bi bi-envelope"></i>&nbsp;&nbsp;<span>Contact</span></a></li>
+        <ul class="nav" id="sideNav">
+            <li class="selected"><a href="#home"><i class="bi bi-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
+            <li><a href="#about"><i class="bi bi-person"></i>&nbsp;&nbsp;<span>About</span></a></li>
+            <li><a href="#skill"><i class="bi bi-hdd-stack"></i></i>&nbsp;&nbsp;<span>Skill</span></a></li>
+            <li><a href="#project"><i class="bi bi-window-stack">&nbsp;&nbsp;</i><span>Project</span></a></li>
+            <li><a href="#contact"><i class="bi bi-envelope"></i>&nbsp;&nbsp;<span>Contact</span></a></li>
         </ul>
     </div>
 
@@ -56,7 +55,7 @@
 
     <div class="main">
         <div id="about" class="about">
-            <h1>About</h1>
+            <h1>About</h1><hr>
             <table class="a-menu">
                 <tr>
                     <td rowspan="2" style="background-color: lightgray; margin: 0 30%;"></td>
@@ -83,7 +82,7 @@
         </div>
 
         <div id="skill" class="skill">
-            <h1>Skill</h1>
+            <h1>Skill</h1><hr>
             <table class="s-menu">
                 <tr>
                     <td>
@@ -135,7 +134,7 @@
         </div>
 
         <div id="project" class="project">
-            <h1>Project</h1>
+            <h1>Project</h1><hr>
             <h3>SHARE HOUSE</h3><h4>팀 프로젝트</h4>
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -195,7 +194,7 @@
         </div>
         
         <div id="contact" class="contact">
-            <h1>Contact</h1>
+            <h1>Contact</h1><hr>
             <div class="contact-group">
                 <div><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Location</h3><h4>: 대구광역시 중구</h4></div>
                 <div><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Email</h3><h4>: qscesz1346@kakao.com</h4></div>

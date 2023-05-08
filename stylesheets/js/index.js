@@ -1,22 +1,3 @@
-// let SHSlickImage = window.document.body.querySelector(':scope > div.main > div.project > div.s-pj > div.fade');
-
-// $(document).ready(function(){
-//     $('.fade').slick({
-//         slide: 'div',
-//         infinite: true,
-//         speed: 500,
-//         dots: true,
-//         autoplay: true,
-//         autoplaySpeed: 2000,
-//         pauseOnHover: true,
-//         vertical: false,
-//         prevArrow: $('.slick-prev'),
-//         nextArrow: $('.slcik-next'),
-//         draggable: true,
-//         fade: true,
-//         cssEase: 'linear'
-//     });
-// });
 $(document).ready(function() {
     const swiper = new Swiper('.swiper', {
         slidesPerView: 1,
@@ -69,14 +50,40 @@ $('.back-to-top').click(function() {
     $(window).scrollTop();
 });
 
-document.addEventListener('scroll',function(){
-    console.log(document.documentElement.scrollTop);
-});
+let sideNav = document.getElementById("sideNav").children;
 
-$(".navBtn").click(function(event){
-    btn = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop : $(btn).offset().top
-    }, 1500, "easyInOutSine"
-    );
+
+$(document).ready(function(){
+    
+    for (let i = 0; i < sideNav.length; i++) {
+        sideNav[i].addEventListener("click", function() {
+            for (const el of sideNav) {
+                el.classList.remove("selected");
+            }
+            sideNav[i].classList.add("selected");
+        });
+        
+        window.addEventListener("scroll", () => {
+            let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+            
+            console.log(scrollLocation);
+
+            for (const el of sideNav) {
+                el.classList.remove("selected");
+            }
+
+            if(scrollLocation>=0 && scrollLocation <= 850) {
+                sideNav[0].classList.add('selected');
+            } else if(scrollLocation >= 850 && scrollLocation <= 1330) {
+                sideNav[1].classList.add('selected');
+            } else if(scrollLocation >= 1330 && scrollLocation <= 2250) {
+                sideNav[2].classList.add('selected');
+            } else if(scrollLocation >= 2250 && scrollLocation <= 3800) {
+                sideNav[3].classList.add('selected');
+            } else {
+                sideNav[4].classList.add('selected');
+            }
+        });
+        
+    };
 });
