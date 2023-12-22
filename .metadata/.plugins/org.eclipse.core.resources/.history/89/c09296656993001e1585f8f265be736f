@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../stylesheets/css/index.css">
+    <script defer src="../stylesheets/js/index.js"></script>
+</head>
+
+<body>
+
+    <div class="side">
+        <div class="header">
+            <h2><b>Lee Dong Gwan</b></h2>
+            <ul class="sns">
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://github.com/qscesz1346"><i class="bi bi-github"></i></a></li>
+            </ul>
+        </div>
+
+        <ul class="nav" id="sideNav">
+            <li class="selected"><a href="#home"><i class="bi bi-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
+            <li><a href="#about"><i class="bi bi-person"></i>&nbsp;&nbsp;<span>About</span></a></li>
+            <li><a href="#skill"><i class="bi bi-hdd-stack"></i></i>&nbsp;&nbsp;<span>Skill</span></a></li>
+            <li><a href="#project"><i class="bi bi-window-stack">&nbsp;&nbsp;</i><span>Project</span></a></li>
+            <li><a href="#contact"><i class="bi bi-envelope"></i>&nbsp;&nbsp;<span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="home">
+        <section class="splash">
+            <div class="visible"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </div>
+
+    <div class="main">
+        <div id="about" class="about">
+            <h1>About</h1><hr>
+            <table class="a-menu">
+                <tr>
+                    <td rowspan="2" style="background-color: lightgray; margin: 0 30%;"></td>
+                    <td>
+                        <h3><i class="bi bi-person-fill"></i>&nbsp;&nbsp;Name</h3>
+                        <h4>이 동 관</h4>
+                    </td>
+                    <td>
+                        <h3><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Address</h3>
+                        <h4>대구광역시 중구</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;Email</h3>
+                        <h4>qscesz1346@kakao.com</h4>
+                    </td>
+                    <td>
+                        <h3><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;Phone</h3>
+                        <h4>010-5507-3472</h4>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="skill" class="skill">
+            <h1>Skill</h1><hr>
+            <table class="s-menu">
+                <tr>
+                    <td>
+                        <h3>FrontEnd</h3>
+                        <p>
+                            <br>
+                            <img src="../stylesheets/images/front/HTML5.png">&nbsp;&nbsp;HTML5<br>
+                            <img src="../stylesheets/images/front/CSS3.png" style="width: 30px;">&nbsp;&nbsp;CSS3<br>
+                            <img src="../stylesheets/images/front/JS.png">&nbsp;&nbsp;JavaScript<br>
+                            <img src="../stylesheets/images/front/jquery.png">&nbsp;&nbsp;jquery<br>
+                            <img src="../stylesheets/images/front/bootstrap.png">&nbsp;&nbsp;BootStrap
+                        </p>
+                    </td>
+                    <td>
+                        <h3>BackEnd</h3>
+                        <p>
+                            <br>
+                            <img src="../stylesheets/images/back/java.svg">&nbsp;&nbsp;Java<br>
+                            <img src="../stylesheets/images/back/jsp&servlet.png" style="width: 60px;">&nbsp;&nbsp;Jsp&Servlets<br>
+                            <img src="../stylesheets/images/back/springboot.png" style="width: 60px;">&nbsp;&nbsp;Spring Boot<br>
+                            <img src="../stylesheets/images/back/Amazon EC2.png" style="width: 50px;">AWS EC2
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>DataBase</h3>
+                        <p class="db">
+                            <br>
+                            <img src="../stylesheets/images/DB/MariaDB.png">&nbsp;&nbsp;MariaDB<br>
+                            <img src="../stylesheets/images/DB/oracle.png">&nbsp;&nbsp;Oracle<br>
+                            <img src="../stylesheets/images/DB/MySQL.png">&nbsp;&nbsp;MySql<br>
+                            <img src="../stylesheets/images/DB/mybatis.png">&nbsp;&nbsp;MyBatis
+                        </p>
+                    </td>
+                    <td>
+                        <h3>Tool</h3>
+                        <p>
+                            <br>
+                            <img src="../stylesheets/images/Tool/Eclipse.png" style="width: 80px;">&nbsp;&nbsp;Eclipse<br>
+                            <img src="../stylesheets/images/Tool/VSCode.png" style="width: 60px;">&nbsp;&nbsp;Visual Studio Code<br>
+                            <img src="../stylesheets/images/Tool/IntelliJ_IDEA.png">&nbsp;&nbsp;IntelliJ<br>
+                            <img src="../stylesheets/images/Tool/github.png" style="width: 50px;">&nbsp;&nbsp;Github<br>
+                            <img src="../stylesheets/images/Tool/postman.png" style="width: 80px;">&nbsp;&nbsp;Postman
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="project" class="project">
+            <h1>Project</h1><hr>
+            <h3>SHARE HOUSE</h3><h4>팀 프로젝트</h4>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-6.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../stylesheets/images/SHproject/SH-7.png">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <h3>PORTFOLIO</h3><h4>개인 프로젝트</h4>
+            <div class="p-pj">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-2.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-3.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-4.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-5.png">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div>
+                        <h3>ddd</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contact" class="contact">
+            <h1>Contact</h1><hr>
+            <div class="contact-group">
+                <div><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Location</h3><h4>: 대구광역시 중구</h4></div>
+                <div><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Email</h3><h4>: qscesz1346@kakao.com</h4></div>
+                <div><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Call</h3><h4>: 010-5507-3472</h4></div>
+                <div><i class="bi bi-github"></i>&nbsp;&nbsp;&nbsp;<h3>Github</h3><h4>: https://github.com/qscesz1346</h4></div>
+            </div>
+        </div>
+
+        <a href="#" class="back-to-top">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+    </div>
+</body>
+
+</html>

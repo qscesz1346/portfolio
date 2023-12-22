@@ -36,7 +36,23 @@
         </div>
 
         <ul class="nav" id="sideNav">
-            <li class="selected"><a href="#home"><i class="bi bi-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
+            <li class="selected"><a href="#top"><i class="bi bi-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
+            <li><a href="#about"><i class="bi bi-person"></i>&nbsp;&nbsp;<span>About</span></a></li>
+            <li><a href="#skill"><i class="bi bi-hdd-stack"></i></i>&nbsp;&nbsp;<span>Skill</span></a></li>
+            <li><a href="#project"><i class="bi bi-window-stack">&nbsp;&nbsp;</i><span>Project</span></a></li>
+            <li><a href="#contact"><i class="bi bi-envelope"></i>&nbsp;&nbsp;<span>Contact</span></a></li>
+        </ul>
+
+        <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <div class="ham-con">
+        <ul class="ham-nav" id="hamNav">
+            <li class="selected"><a href="#top"><i class="bi bi-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
             <li><a href="#about"><i class="bi bi-person"></i>&nbsp;&nbsp;<span>About</span></a></li>
             <li><a href="#skill"><i class="bi bi-hdd-stack"></i></i>&nbsp;&nbsp;<span>Skill</span></a></li>
             <li><a href="#project"><i class="bi bi-window-stack">&nbsp;&nbsp;</i><span>Project</span></a></li>
@@ -56,29 +72,14 @@
     <div class="main">
         <div id="about" class="about">
             <h1>About</h1><hr>
-            <table class="a-menu">
-                <tr>
-                    <td rowspan="2" style="background-color: lightgray; margin: 0 30%;"></td>
-                    <td>
-                        <h3><i class="bi bi-person-fill"></i>&nbsp;&nbsp;Name</h3>
-                        <h4>이 동 관</h4>
-                    </td>
-                    <td>
-                        <h3><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Address</h3>
-                        <h4>대구광역시 중구</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;Email</h3>
-                        <h4>qscesz1346@kakao.com</h4>
-                    </td>
-                    <td>
-                        <h3><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;Phone</h3>
-                        <h4>010-5507-3472</h4>
-                    </td>
-                </tr>
-            </table>
+            <div>
+                <div>
+                    <img src="" alt="대충 코딩중인 사진">
+                </div>
+                <p>
+                    대충 소개글
+                </p>
+            </div>
         </div>
 
         <div id="skill" class="skill">
@@ -101,6 +102,7 @@
                         <p>
                             <br>
                             <img src="../stylesheets/images/back/java.svg">&nbsp;&nbsp;Java<br>
+                            <img src="../stylesheets/images/back/C.png" style="width: 60px;">&nbsp;&nbsp;C#<br>
                             <img src="../stylesheets/images/back/jsp&servlet.png" style="width: 60px;">&nbsp;&nbsp;Jsp&Servlets<br>
                             <img src="../stylesheets/images/back/springboot.png" style="width: 60px;">&nbsp;&nbsp;Spring Boot<br>
                             <img src="../stylesheets/images/back/Amazon EC2.png" style="width: 50px;">AWS EC2
@@ -125,6 +127,7 @@
                             <img src="../stylesheets/images/Tool/Eclipse.png" style="width: 80px;">&nbsp;&nbsp;Eclipse<br>
                             <img src="../stylesheets/images/Tool/VSCode.png" style="width: 60px;">&nbsp;&nbsp;Visual Studio Code<br>
                             <img src="../stylesheets/images/Tool/IntelliJ_IDEA.png">&nbsp;&nbsp;IntelliJ<br>
+                            <img src="../stylesheets/images/Tool//Unity.png" style="width: 100px;">&nbsp;&nbsp;Unity<br>
                             <img src="../stylesheets/images/Tool/github.png" style="width: 50px;">&nbsp;&nbsp;Github<br>
                             <img src="../stylesheets/images/Tool/postman.png" style="width: 80px;">&nbsp;&nbsp;Postman
                         </p>
@@ -136,59 +139,151 @@
         <div id="project" class="project">
             <h1>Project</h1><hr>
             <h3>SHARE HOUSE</h3><h4>팀 프로젝트</h4>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-1.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-2.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-3.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-4.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-5.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-6.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../stylesheets/images/SHproject/SH-7.png">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div>
-                    <p></p>
-                </div>
-            </div>
-            <h3>PORTFOLIO</h3><h4>개인 프로젝트</h4>
-            <div class="p-pj">
+            <div class="pj">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="../stylesheets/images/PFproject/PF-1.png">
+                            <img src="../stylesheets/images/SHproject/SH-1.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="../stylesheets/images/PFproject/PF-2.png">
+                            <img src="../stylesheets/images/SHproject/SH-2.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="../stylesheets/images/PFproject/PF-3.png">
+                            <img src="../stylesheets/images/SHproject/SH-3.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="../stylesheets/images/PFproject/PF-4.png">
+                            <img src="../stylesheets/images/SHproject/SH-4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="../stylesheets/images/PFproject/PF-5.png">
+                            <img src="../stylesheets/images/SHproject/SH-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/SHproject/SH-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/SHproject/SH-7.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/SHproject/SH-8.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/SHproject/SH-9.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/SHproject/SH-10.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/SHproject/SH-11.png" alt="">
                         </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
-                    <div>
-                        <h3>ddd</h3>
+                </div>                
+                <div class="explain">
+                    <p>
+                        코리아 IT 아카데미에서 교육을 받을 당시 팀을 꾸려 처음 진행한 프로젝트입니다.<br>
+                        기획과 설계 단계부터 팀원들과 회의를 하며 웹페이지 제작에 대해 공부를 할 수 있는 좋은 기회가 되었으며,
+                        유스케이스와 다이어그램도 만들어보고 MVC패턴에 맞춰 설계도 해보며 기초 지식을 쌓을 수 있는 공부가 되었습니다.
+                    </p>
+                    <p>
+                        기술 스택 : JAVA, HTML, CSS, JavaScript, JSP, Tomcat, Jquery, Swiper, Slick, Oracle SQL
+                    </p>
+                </div>
+            </div>
+            <h3>UNITY</h3><h4>개인 프로젝트</h4>
+            <div class="pj">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/UGproject/UG-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/UGproject/UG-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/UGproject/UG-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/UGproject/UG-4.png" alt="">
+                        </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="explain">
+                    <p>
+                        평소 여러 공부하는 것을 좋아하여 여러가지를 보던 중 Unity를 이용한 2D 게임개발을 접하게 되어
+                        혼자 클론 게임 개발을 공부하고 해보았습니다.<br>
+                        다른 언어와 프로그램을 배우는 것에 대해 거부감이 없어 처음 접하는 프로그램과 언어였지만 흥미를 가지게 되었고
+                        미흡하지만 조금씩 개발을 해보며 자신감을 가지게 되었습니다.
+                    </p>
+                    <p>
+                        기술 스택 : Unity, C#, Visual Studio Code
+                    </p>
+                </div>
+            </div>
+            <h3>PORTFOLIO</h3><h4>개인 프로젝트</h4>
+            <div class="pj">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/PFproject/PF-5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="explain">
+                    <p>
+                        프로젝트를 진행해보며 반응형 웹을 제대로 구현해본적이 없어서
+                        개인 포트폴리오 사이트를 반응형 웹으로 구현 해보았습니다.
+                    </p>
+                    <p>
+                        기술 스택 : HTML, CSS, JavaScript, Swiper, Visual Studio Code
+                    </p>
+                </div>
+            </div>
+            <h3>게시판형 블로그</h3><h4>개인 프로젝트</h4>
+            <div class="pj">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../stylesheets/images/" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="explain">
+                    <p>
+                        리액트와 스프링 부트에 대해 공부하고 싶어서 만들어보고 있는 중입니다.
+                        진행되는대로 차근차근 업데이트 하겠습니다. 
+                    </p>
+                    <p>
+                        기술 스택 : Spring Boot, React, MySQL, Visual Studio Code
+                    </p>
+                </div>
+            </div>
+            <div class="modal">
+                <button>&times;</button>
+                <div class="modal-box">
+                    <img src="" alt="">
                 </div>
             </div>
         </div>
@@ -199,11 +294,12 @@
                 <div><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Location</h3><h4>: 대구광역시 중구</h4></div>
                 <div><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Email</h3><h4>: qscesz1346@kakao.com</h4></div>
                 <div><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;<h3>Call</h3><h4>: 010-5507-3472</h4></div>
-                <div><i class="bi bi-github"></i>&nbsp;&nbsp;&nbsp;<h3>Github</h3><h4>: https://github.com/qscesz1346</h4></div>
+                <div><i class="bi bi-github"></i>&nbsp;&nbsp;&nbsp;<h3>Github</h3><h4>: <a href="https://github.com/qscesz1346">https://github.com/qscesz1346</a></h4></div>
+                <img src="../stylesheets/images/취업증명사진1.jpg" alt="">
             </div>
         </div>
 
-        <a href="#" class="back-to-top">
+        <a href="#top" class="back-to-top">
             <i class="bi bi-chevron-up"></i>
         </a>
     </div>

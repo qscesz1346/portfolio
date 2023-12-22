@@ -1,0 +1,5 @@
+display가 none 일 경우 transition이 안먹히는것
+transition은 두 상태에서 속성의 변화가 일정 기간에 걸쳐 일어나도록 하지만 
+display: none 상태에서 동적으로 클래스를 추가하여 display: block을 추가한다고 하면 
+렌더 트리에 없다가 추가되는 것이기 때문에 transition의 처음 시작점이 없다. 
+그래서 시각적으로transition이 동작되지 않는 것처럼 보이는 것이다.
