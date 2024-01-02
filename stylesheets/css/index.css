@@ -113,89 +113,191 @@ body>div.home>section.splash>div {
 body>div.home>section.splash>div.visible {
     opacity: 0.9;
 }
+body>div.home>div.back {
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    opacity: 0.5;
+    margin: 0;
+}
 
-body>div.main {
+body>div.home>div.home-typing {
+    position: fixed;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+}
+
+body>div.home>div.home-typing * {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body>div.home>div.home-typing>h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+body>div.home>div.home-typing>#typingCursor2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: transparent;
+}
+
+body>div.home>div.home-typing>#typingCursor2.cursorVisible::after {
+    background-color: white;
+}
+
+body>div.home>div.home-typing>#typingCursor2.active::after {
+    display: none;
+}
+
+body>div.home>div.home-typing>h2 {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+div.main {
     left: 20%;
     top: 100%;
     width: 80%;
     background-color: white;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
 }
 
-body>div.main>div.about>div {
+div.main>div.about>div {
     display: flex;
 }
 
-body>div.main>div.about>div>div {
+div.main>div.about>div>div.about-img {
     background-color: lightgray;
-    width: 35%;
+    width: 45%;
     height: 25%;
 }
 
-body>div.main>div.about>div>p {
-    font-weight: 400;
-    padding-left: 10%;
+div.main>div.about>div>div.about-ex {
+
 }
 
-body>div.main h1 {
+div.main>div.about>div>div.about-ex * {
+    padding-left: 10%;
+    width: 100%;
+}
+
+div.main>div.about>div>div.about-ex>p {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+div.main>div.about>div>div.about-ex>h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+div.main>div.about>div.history {
+    display: flex;
+    flex-direction: column;
+}
+
+div.main>div.about>div.history>h3 {
+    margin-bottom: 5%;
+}
+
+div.main>div.about>div.history>div {
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    width: 60%;
+    padding-left: 1.5%;
+    margin-left: 15%;
+    border-left: 1px solid lightskyblue;
+}
+
+div.main>div.about>div.history>div>div {
+    border-bottom: 1px solid lightskyblue;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+}
+
+div.main>div.about>div.history>div>div>h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+div.main h1 {
     font-size: 3rem;
     font-weight: 800;
     margin-top: 5%;
     margin-left: 5%;
 }
 
-body>div.main h3 {
+div.main h3 {
     font-size: 2rem;
     font-weight: 600;
 }
 
-body>div.main h4 {
+div.main h4 {
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-body>div.main>div:last-child {
+div.main>div:last-child {
     margin-bottom: 5%;
 }
 
-body>div.main>div>div {
+div.main>div>div {
     margin-top: 3%;
     margin-left: 10%;
 }
 
-body>div.main table {
+div.main table {
     margin: 3% auto;
 }
 
-body>div.main>div.skill>table.s-menu td {
+div.main>div.skill>table.s-menu td {
     width: 100vw;
     text-align: center;
     padding: 3%;
 }
 
-body>div.main>div.skill>table.s-menu img {
+div.main>div.skill>table.s-menu img {
     width: 40px;
     height: 40px;
 }
 
-body>div.main>div.skill>table.s-menu p {
+div.main>div.skill>table.s-menu p {
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-body>div.main>div.skill>table.s-menu p.db img {
+div.main>div.skill>table.s-menu p.db img {
     width: 60px;
     height: 40px;
 }
 
-body>div.main>div.project>h3 {
+div.main>div.project>h3 {
     margin-top: 5%;
     margin-left: 10%;
     display: inline-block;
 }
 
-body>div.main>div.project>h4 {
+div.main>div.project>h4 {
     margin-left: 5%;
     font-size: 1rem;
     display: inline-block;
@@ -206,22 +308,22 @@ body>div.main>div.project>h4 {
     object-fit: cover;
 }
 
-body>div.main>div.project>div.pj {
+div.main>div.project>div.pj {
     display: flex;
 }
 
-body>div.main>div.project>div.pj>div.swiper {
+div.main>div.project>div.pj>div.swiper {
     width: 55%;
     margin: 0;
     margin-right: 5%;
 }
 
-body>div.main>div.project>div.pj>div.explain {
+div.main>div.project>div.pj>div.explain {
     margin: 0;
     width: 25%;
 }
 
-body>div.main>div.project>div.pj>div.explain p {
+div.main>div.project>div.pj>div.explain p {
     font-weight: 400;
 }
 
@@ -244,7 +346,7 @@ body>div.main>div.project>div.pj>div.explain p {
     background: black !important;
 }
 
-body>div.main>div.project>div.modal {
+div.main>div.project>div.modal {
     margin: 0;
 	display: none;
 	z-index: 500;
@@ -256,7 +358,7 @@ body>div.main>div.project>div.modal {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-body>div.main>div.project>div.modal button {
+div.main>div.project>div.modal button {
 	position: absolute;
 	top: 3rem;
 	right: 3rem;
@@ -266,18 +368,17 @@ body>div.main>div.project>div.modal button {
 	font-size: 5rem;
 }
 
-body>div.main>div.project>div.modal-box {
+div.main>div.project>div.modal>div.modal-box {
 	position: relative;
-	top: 20%;
+	top: 5%;
 	left: 50%;
 	transform: translate(-50%, -20%);
 	background-color: white;
-	width: 30%;
-	height: 30%;
+	width: 100%;
 	text-align: center;
 }
 
-body>div.main>div.project>div.modal>div.modal-box img {
+div.main>div.project>div.modal>div.modal-box img {
     position: fixed;
 	top: 5%;
     left: 10%;
@@ -301,25 +402,25 @@ body>div.main>div.project>div>div {
     width: 50%;
 } */
 
-body>div.main>div.contact {
+div.main>div.contact {
     height: 100vh;
 }
 
-body>div.main>div.contact a {
+div.main>div.contact a {
     color: inherit;
     text-decoration: none;
 }
 
-body>div.main>div.contact a:visited {
+div.main>div.contact a:visited {
     color: gray;
 }
 
-body>div.main>div.contact a:hover, a:focus {
+div.main>div.contact a:hover, a:focus {
     color: gray;
     text-decoration: underline;
 }
 
-body>div.main>div.contact>div.contact-group {
+div.main>div.contact>div.contact-group {
     width: 80%;
     margin-top: 15%;
     box-shadow: 0px 0px 5px 5px lightgray;
@@ -327,23 +428,23 @@ body>div.main>div.contact>div.contact-group {
     position: relative;
 }
 
-body>div.main>div.contact>div.contact-group>div {
+div.main>div.contact>div.contact-group>div {
     margin: 2.5% 0;
 }
 
-body>div.main>div.contact>div.contact-group>div>i {
+div.main>div.contact>div.contact-group>div>i {
     font-size: 2rem;
 }
 
-body>div.main>div.contact>div.contact-group>div>h3 {
+div.main>div.contact>div.contact-group>div>h3 {
     display: inline-block;
     width: 150px;
 }
-body>div.main>div.contact>div.contact-group>div>h4 {
+div.main>div.contact>div.contact-group>div>h4 {
     display: inline-block;
 }
 
-body>div.main>div.contact>div.contact-group img {
+div.main>div.contact>div.contact-group img {
     position: absolute;
     right: 5%;
     bottom: 10%;
@@ -377,6 +478,10 @@ body>div.main>div.contact>div.contact-group img {
     transition: background 0.2s ease-in-out;
 }
 
+footer {
+    display: none;
+}
+
 /* 모바일 화면 */
 @media screen and (max-width : 767px) {
     
@@ -391,9 +496,9 @@ body>div.main>div.contact>div.contact-group img {
         margin: 0;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 10%;
-        z-index: 5;
+        width: 100vw;
+        height: 10vh;
+        z-index: 99;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -465,12 +570,12 @@ body>div.main>div.contact>div.contact-group img {
     }
 
     body>div.ham-con{
-        width: 100%;
-        height: 40vh;
+        width: 100vw;
+        height: 60vh;
         background-color: rgb(27, 27, 37);
         position: fixed;
         top: 10vh;
-        right: -100%;
+        right: -100vw;
         z-index: 99;
         opacity: 0;
     }
@@ -504,7 +609,6 @@ body>div.main>div.contact>div.contact-group img {
         color: lightskyblue;
         transition-duration: 1000ms;
     }
-      
 
     body>div.home>section.splash {
         left: 0;
@@ -518,8 +622,8 @@ body>div.main>div.contact>div.contact-group img {
     body>div.home>section.splash>div {
         top: 10vh;
         left: 0;
-        width: 100% !important;
-        height: 40% !important;
+        width: 100vw !important;
+        height: 60vh !important;
         background-size: 100% 100%;
         background-position: center top;
         opacity: 0;
@@ -532,64 +636,160 @@ body>div.main>div.contact>div.contact-group img {
         opacity: 0.9;
     }
 
-    body>div.main {
-        left: 0 !important;
-        top: 50% !important;
-        width: 100% !important;
-        background-color: white;
-        position: absolute;
+    body>div.home>div.back {
+        background-color: black;
         z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        margin: 0;
+    }
+    
+    body>div.home>div.home-typing {
+        position: fixed;
+        left: 50vw;
+        top: 40vh;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        z-index: 2;
     }
 
-    body>div.main>div.about>div {
+    body>div.home>div.home-typing>h1 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    body>div.home>div.home-typing>h2 {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    div.main {
+        left: 0 !important;
+        top: 10vh !important;
+        width: 100vw !important;
+        min-height: 60vh !important;
+        background-color: white;
+        padding-bottom: 30vh;
+        position: absolute;
+        z-index: 5;
+        display: none;
+    }
+
+    div.main>div {
+        display: none;
+    }
+
+    div.main>div.about>div {
         display: flex;
         flex-direction: column;
     }
+    
+    div.main>div.about>div>div.about-img {
+        padding-left: 10%;
+    }
 
-    body>div.main>div.about>div>div,
-    body>div.main>div.about>div>p {
-        width: 80%;
-        padding: 0 !important;
+    div.main>div.about>div>div {
+        width: 80% !important;
         margin-left: 0;
     }
 
-    body>div.main h1 {
+    div.main>div.about>div.history {
+        padding-bottom: 5vh;
+    }
+
+    div.main>div.about>div.history>div>div>h4 {
+        font-size: 0.8rem;
+    }
+
+    div.main>div.about>div.history>div>div {
+        font-size: 0.5rem;
+    }
+
+    div.main h1 {
         font-size: 2.5rem;
         font-weight: 600;
     }
 
-    body>div.main h3 {
+    div.main h3 {
         font-size: 1.75rem;
         font-weight: 400;
     }
     
-    body>div.main h4 {
+    div.main h4 {
         font-size: 1.2rem;
         font-weight: 300;
     }
 
-    body>div.main>div.project>div.pj {
+    div.main>div.skill>table span {
+        display: none;
+    }
+
+    div.main>div.project>div.pj {
         display: flex;
         flex-direction: column;
     }
 
-    body>div.main>div.project>div.pj>div.swiper {
+    div.main>div.project>div.pj>div.swiper {
         width: 80%;
         margin: 0;
     }
     
-    body>div.main>div.project>div.pj>div.explain {
+    div.main>div.project>div.pj>div.explain {
         margin: 0;
         width: 80%;
     }
 
-    body>div.main>div.contact {
-        height: 40% !important;
-        margin-bottom: 10%;
+    /* .footer {
+        display: block;
+        position: sticky;
+        background-color: rgb(27, 27, 37);
+        z-index: 2;
+        height: 30vh;
+        top: 50vh;
+        padding: 2vh 0 0 5vw;
+        color: #fff;
+    } */
+
+    .footer {
+        display: block;
+        position: fixed;
+        background-color: rgb(27, 27, 37);
+        z-index: 99;
+        height: 30vh;
+        width: 100vw;
+        top: 70vh;
+        padding: 1vh 0 0 5vw;
+        color: #fff;
     }
 
-    body>div.main>div.contact>div.contact-group img {
-        display: none;
+    .footer>div.contact a {
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    .footer>div.contact a:hover, a:focus {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    .footer>div.contact>div.contact-group>h1 {
+        margin-bottom: 5vh;
+    }
+
+    .footer h4 {
+        display: inline-block;
+        font-size: 1.15rem;
+        font-weight: 400;
+    }
+
+    .footer p {
+        margin-top: 3vh;
+        font-size: 1rem;
+        font-weight: 300;
     }
 
 }
