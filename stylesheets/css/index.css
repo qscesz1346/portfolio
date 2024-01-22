@@ -186,9 +186,13 @@ div.main>div.about>div {
 }
 
 div.main>div.about>div>div.about-img {
-    background-color: lightgray;
     width: 45%;
     height: 25%;
+}
+
+div.main>div.about>div>div.about-img>img {
+    width: 100%;
+    object-fit: cover;
 }
 
 div.main>div.about>div>div.about-ex {
@@ -502,6 +506,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
         background-color: rgb(27, 27, 37);
         padding: 0;
     }
@@ -521,7 +526,6 @@ footer {
     }
 
     body>div.side>a.menu-trigger {
-        margin-right: 2rem;
         position: relative;
         width: 3rem;
         height: 2rem;
@@ -687,7 +691,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    
+
     div.main>div.about>div>div.about-img {
         padding-left: 10%;
     }
